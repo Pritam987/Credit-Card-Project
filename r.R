@@ -6,8 +6,8 @@ NbClust(data=dataset,method ="kmeans")
 library(NbClust)
 dataset <- read.csv('C:\\Users\\Pritam\\Desktop\\Project 4th sem\\Data_processed_after_pca.csv')
 NbClust(data=dataset,method ="kmeans")
-#After PCA
+#Before PCA
 library(mclust)
-dataset <- read.csv('C:\\Users\\Pritam\\Desktop\\Project 4th sem\\Data_processed_after_pca.csv')
+dataset <- read.csv('C:\\Users\\Pritam\\Desktop\\Project 4th sem\\Data_processed.csv')
 model=Mclust(dataset)
-summary(model)
+summary(model) 
